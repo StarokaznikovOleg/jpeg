@@ -1,0 +1,61 @@
+set_global_assignment -name FAMILY "Cyclone 10 GX"
+set_global_assignment -name TOP_LEVEL_ENTITY jpegenc
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:07:11  OCTOBER 04, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Pro Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name DEVICE 10CX220YF780I5G
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name POWER_AUTO_COMPUTE_TJ ON
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name SDC_FILE JPEG.sdc
+set_global_assignment -name IP_FILE ../ip/ram_RAMQ.ip
+set_global_assignment -name IP_FILE ../ip/ram_MDCT.ip
+set_global_assignment -name IP_FILE ../ip/ram_header.ip
+set_global_assignment -name IP_FILE ../ip/ram_FRAM1.ip
+set_global_assignment -name IP_FILE ../ip/ram_DBUF.ip
+set_global_assignment -name IP_FILE ../ip/fifo_ZIGZAG.ip
+set_global_assignment -name IP_FILE ../ip/fifo_rle.ip
+set_global_assignment -name IP_FILE ../ip/fifo_huffman.ip
+set_global_assignment -name IP_FILE ../ip/fifo_FDCT.ip
+set_global_assignment -name IP_FILE ../ip/ram_picture.ip
+set_global_assignment -name HEX_FILE header.hex
+set_global_assignment -name VHDL_FILE ../src/zigzag/ZZ_TOP.VHD
+set_global_assignment -name VHDL_FILE ../src/zigzag/ZIGZAG.VHD
+set_global_assignment -name VHDL_FILE ../src/top/JpegEnc.vhd
+set_global_assignment -name VHDL_FILE ../src/rle/RleDoubleFifo.vhd
+set_global_assignment -name VHDL_FILE ../src/rle/RLE_TOP.VHD
+set_global_assignment -name VHDL_FILE ../src/rle/RLE.VHD
+set_global_assignment -name VHDL_FILE ../src/quantizer/ROMR.vhd
+set_global_assignment -name VHDL_FILE ../src/quantizer/r_divider.vhd
+set_global_assignment -name VHDL_FILE ../src/quantizer/QUANTIZER.vhd
+set_global_assignment -name VHDL_FILE ../src/quantizer/QUANT_TOP.VHD
+set_global_assignment -name VHDL_FILE ../src/outmux/OutMux.vhd
+set_global_assignment -name VHDL_FILE ../src/mdct/ROMO.VHD
+set_global_assignment -name VHDL_FILE ../src/mdct/ROME.VHD
+set_global_assignment -name VHDL_FILE ../src/mdct/MDCT_PKG.vhd
+set_global_assignment -name VHDL_FILE ../src/mdct/MDCT.VHD
+set_global_assignment -name VHDL_FILE ../src/mdct/FDCT.vhd
+set_global_assignment -name VHDL_FILE ../src/mdct/DCT2D.VHD
+set_global_assignment -name VHDL_FILE ../src/mdct/DCT1D.vhd
+set_global_assignment -name VHDL_FILE ../src/mdct/DBUFCTL.VHD
+set_global_assignment -name VHDL_FILE ../src/JFIFGen/JFIFGen.vhd
+set_global_assignment -name VHDL_FILE ../src/iramif/IRAMIF.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/Huffman.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/DoubleFifo.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/DC_ROM.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/DC_CR_ROM.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/AC_ROM.vhd
+set_global_assignment -name VHDL_FILE ../src/huffman/AC_CR_ROM.vhd
+set_global_assignment -name VHDL_FILE ../src/hostif/HostIF.vhd
+set_global_assignment -name VHDL_FILE ../src/control/CtrlSM.vhd
+set_global_assignment -name VHDL_FILE ../src/common/SingleSM.vhd
+set_global_assignment -name VHDL_FILE ../src/common/JPEG_PKG.vhd
+set_global_assignment -name VHDL_FILE ../src/bytestuffer/ByteStuffer.vhd
+set_global_assignment -name VHDL_FILE ../src/BufFifo/BUF_FIFO.vhd
+set_global_assignment -name HEX_FILE quant75_table.hex

@@ -1,0 +1,214 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=jpeg
+
+[Library]
+JPEG=.\JPEG.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+CSYNTH_TOOL=<none>
+PHYSSYNTH_TOOL=<none>
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+REFRESH_FLOW=1
+FAMILY=<none>
+fileopenfolder=C:\hw\JPEG\ip\fifo_ZIGZAG\synth
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+JPEG=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+
+[Folders]
+Name3=Makefiles
+Directory3=c:\hw\JPEG\
+Extension3=mak
+Name4=Memory
+Directory4=c:\hw\JPEG\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=c:\hw\JPEG\
+Extension5=dll
+Name6=PDF
+Directory6=c:\hw\JPEG\
+Extension6=pdf
+Name7=HTML
+Directory7=c:\hw\JPEG\
+Extension7=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+common=1
+BufFifo=1
+mdct=1
+top=1
+hostif=1
+control=1
+zigzag=1
+quantizer=1
+rle=1
+huffman=1
+bytestuffer=1
+JFIFGen=1
+outmux=1
+tb=1
+
+[Files]
+/JPEG.bde=-1
+/..\ip\ram_picture\synth\ram_picture.v=-1
+/..\ip\ram_FRAM1\synth\ram_FRAM1.v=-1
+/..\ip\ram_MDCT\synth\ram_MDCT.v=-1
+/..\ip\ram_DBUF\synth\ram_DBUF.v=-1
+/..\ip\fifo_FDCT\synth\fifo_FDCT.v=-1
+/..\ip\fifo_huffman\synth\fifo_huffman.v=-1
+/..\ip\ram_header\synth\ram_header.v=-1
+/..\ip\ram_RAMQ\synth\ram_RAMQ.v=-1
+/..\ip\fifo_rle\synth\fifo_rle.v=-1
+/..\ip\fifo_ZIGZAG\synth\fifo_ZIGZAG.v=-1
+common/SingleSM.vhd=-1
+common/JPEG_PKG.vhd=-1
+common/RAMZ.VHD=-1
+common/FIFO.vhd=-1
+BufFifo/BUF_FIFO.vhd=-1
+BufFifo/SUB_RAMZ.VHD=-1
+BufFifo/SUB_FIFO.vhd=-1
+mdct/MDCT_PKG.vhd=-1
+mdct/DBUFCTL.VHD=-1
+mdct/DCT2D.VHD=-1
+mdct/ROME.VHD=-1
+mdct/DCT1D.vhd=-1
+mdct/ROMO.VHD=-1
+mdct/MDCT.VHD=-1
+mdct/FDCT.vhd=-1
+mdct/RAM.VHD=-1
+top/JpegEnc.vhd=-1
+hostif/HostIF.vhd=-1
+control/CtrlSM.vhd=-1
+zigzag/ZIGZAG.VHD=-1
+zigzag/ZZ_TOP.VHD=-1
+quantizer/ROMR.vhd=-1
+quantizer/r_divider.vhd=-1
+quantizer/QUANTIZER.vhd=-1
+quantizer/QUANT_TOP.VHD=-1
+quantizer/ROMQ.vhd=-1
+quantizer/s_divider.vhd=-1
+rle/RleDoubleFifo.vhd=-1
+rle/RLE.VHD=-1
+rle/RLE_TOP.VHD=-1
+huffman/DC_ROM.vhd=-1
+huffman/DoubleFifo.vhd=-1
+huffman/AC_CR_ROM.vhd=-1
+huffman/DC_CR_ROM.vhd=-1
+huffman/AC_ROM.vhd=-1
+huffman/Huffman.vhd=-1
+bytestuffer/ByteStuffer.vhd=-1
+JFIFGen/JFIFGen.vhd=-1
+JFIFGen/HeaderRAM.v=-1
+JFIFGen/header.hex=-1
+outmux/OutMux.vhd=-1
+tb/DCT_TROM.vhd=-1
+tb/GPL_V2_Image_pkg.vhd=-1
+tb/RAMSIM.VHD=-1
+tb/ClkGen.vhd=-1
+tb/MDCTTB_PKG.vhd=-1
+tb/HostBFM.vhd=-1
+tb/JPEG_TB.VHD=-1
+
+[Files.Data]
+.\src\JPEG.bde=Block Diagram
+.\ip\ram_picture\synth\ram_picture.v=Verilog Source Code
+.\ip\ram_FRAM1\synth\ram_FRAM1.v=Verilog Source Code
+.\ip\ram_MDCT\synth\ram_MDCT.v=Verilog Source Code
+.\ip\ram_DBUF\synth\ram_DBUF.v=Verilog Source Code
+.\ip\fifo_FDCT\synth\fifo_FDCT.v=Verilog Source Code
+.\ip\fifo_huffman\synth\fifo_huffman.v=Verilog Source Code
+.\ip\ram_header\synth\ram_header.v=Verilog Source Code
+.\ip\ram_RAMQ\synth\ram_RAMQ.v=Verilog Source Code
+.\ip\fifo_rle\synth\fifo_rle.v=Verilog Source Code
+.\ip\fifo_ZIGZAG\synth\fifo_ZIGZAG.v=Verilog Source Code
+.\src\common\SingleSM.vhd=VHDL Source Code
+.\src\common\JPEG_PKG.vhd=VHDL Source Code
+.\src\common\RAMZ.VHD=VHDL Source Code
+.\src\common\FIFO.vhd=VHDL Source Code
+.\src\BufFifo\BUF_FIFO.vhd=VHDL Source Code
+.\src\BufFifo\SUB_RAMZ.VHD=VHDL Source Code
+.\src\BufFifo\SUB_FIFO.vhd=VHDL Source Code
+.\src\mdct\MDCT_PKG.vhd=VHDL Source Code
+.\src\mdct\DBUFCTL.VHD=VHDL Source Code
+.\src\mdct\DCT2D.VHD=VHDL Source Code
+.\src\mdct\ROME.VHD=VHDL Source Code
+.\src\mdct\DCT1D.vhd=VHDL Source Code
+.\src\mdct\ROMO.VHD=VHDL Source Code
+.\src\mdct\MDCT.VHD=VHDL Source Code
+.\src\mdct\FDCT.vhd=VHDL Source Code
+.\src\mdct\RAM.VHD=VHDL Source Code
+.\src\top\JpegEnc.vhd=VHDL Source Code
+.\src\hostif\HostIF.vhd=VHDL Source Code
+.\src\control\CtrlSM.vhd=VHDL Source Code
+.\src\zigzag\ZIGZAG.VHD=VHDL Source Code
+.\src\zigzag\ZZ_TOP.VHD=VHDL Source Code
+.\src\quantizer\ROMR.vhd=VHDL Source Code
+.\src\quantizer\r_divider.vhd=VHDL Source Code
+.\src\quantizer\QUANTIZER.vhd=VHDL Source Code
+.\src\quantizer\QUANT_TOP.VHD=VHDL Source Code
+.\src\quantizer\ROMQ.vhd=VHDL Source Code
+.\src\quantizer\s_divider.vhd=VHDL Source Code
+.\src\rle\RleDoubleFifo.vhd=VHDL Source Code
+.\src\rle\RLE.VHD=VHDL Source Code
+.\src\rle\RLE_TOP.VHD=VHDL Source Code
+.\src\huffman\DC_ROM.vhd=VHDL Source Code
+.\src\huffman\DoubleFifo.vhd=VHDL Source Code
+.\src\huffman\AC_CR_ROM.vhd=VHDL Source Code
+.\src\huffman\DC_CR_ROM.vhd=VHDL Source Code
+.\src\huffman\AC_ROM.vhd=VHDL Source Code
+.\src\huffman\Huffman.vhd=VHDL Source Code
+.\src\bytestuffer\ByteStuffer.vhd=VHDL Source Code
+.\src\JFIFGen\JFIFGen.vhd=VHDL Source Code
+.\src\JFIFGen\HeaderRAM.v=Verilog Source Code
+.\src\JFIFGen\header.hex=Memory File
+.\src\outmux\OutMux.vhd=VHDL Source Code
+.\src\tb\DCT_TROM.vhd=VHDL Source Code
+.\src\tb\GPL_V2_Image_pkg.vhd=VHDL Source Code
+.\src\tb\RAMSIM.VHD=VHDL Source Code
+.\src\tb\ClkGen.vhd=VHDL Source Code
+.\src\tb\MDCTTB_PKG.vhd=VHDL Source Code
+.\src\tb\HostBFM.vhd=VHDL Source Code
+.\src\tb\JPEG_TB.VHD=VHDL Source Code
+
+[file_out:/JPEG.bde]
+/..\compile\JPEG.vhd=-1
+
